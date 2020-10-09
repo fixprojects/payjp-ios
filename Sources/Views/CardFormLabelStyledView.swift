@@ -29,8 +29,8 @@ public class CardFormLabelStyledView: CardFormView, CardFormProperties {
     @IBOutlet weak var holderContainer: UIStackView!
     @IBOutlet weak var ocrButton: UIButton!
 
-    @IBOutlet weak var cardNumberTextField: FormTextField!
-    @IBOutlet weak var expirationTextField: FormTextField!
+    @IBOutlet weak internal cardNumberTextField: FormTextField!
+    @IBOutlet weak internal expirationTextField: FormTextField!
     @IBOutlet weak var cvcTextField: FormTextField!
     @IBOutlet weak var cardHolderTextField: FormTextField!
 
