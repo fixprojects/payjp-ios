@@ -29,8 +29,8 @@ public class CardFormLabelStyledView: CardFormView, CardFormProperties {
     @IBOutlet weak var holderContainer: UIStackView!
     @IBOutlet weak var ocrButton: UIButton!
 
-    @IBOutlet weak internal var cardNumberTextField: FormTextField!
-    @IBOutlet weak internal var expirationTextField: FormTextField!
+    @IBOutlet weak var cardNumberTextField: FormTextField!
+    @IBOutlet weak var expirationTextField: FormTextField!
     @IBOutlet weak var cvcTextField: FormTextField!
     @IBOutlet weak var cardHolderTextField: FormTextField!
 
@@ -147,6 +147,9 @@ public class CardFormLabelStyledView: CardFormView, CardFormProperties {
         cvcTextField.delegate = self
         cardHolderTextField.delegate = self
     }
+    
+    public var cardNumberTextFieldText: String?{ cardNumberTextField.text }
+    public var expirationTextFieldText: String?{ expirationTextField.text }
 }
 
 // MARK: CardFormViewProtocol
